@@ -1,5 +1,5 @@
 # Payment API
-This is used for payment services developed for Razorpay payment gateway. There is two routes ```/makepayment``` to order in razorpay and complete the payment and ```verifypayment```
+This is used for payment services developed for Razorpay payment gateway. There is two routes ```/makepayment``` to order in razorpay and complete the payment and ```/verifypayment```
 is to verify the payment whether correct or not.
 
 
