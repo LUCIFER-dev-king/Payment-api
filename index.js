@@ -11,7 +11,6 @@ var instance = new Razorpay({
   key_secret: process.env.KEY_SECRET,
 });
 
-
 const app = express();
 app.use(bodyParser.json());
 app.use(cors({ origin: true }));
@@ -53,15 +52,7 @@ app.post("/verifypayment", (req, res) => {
   }
 });
 
-const PORT = process.env.PORT || 5000
+const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`Server is listening on ${PORT}`);
 });
-
-// checkout_logo: "https://cdn.razorpay.com/logo.png"
-// custom_branding: false
-// org_logo: ""
-// org_name: "Razorpay Software Private Ltd"
-// razorpay_order_id: "order_IlGrrRYiawrmgE"
-// razorpay_payment_id: "pay_IlHNXRsAanMVSD"
-// razorpay_signature: "c9a8f3c5a8cfc71dc8324225a53da37a0a9d91b421b25e71d4690fcc957b0f90"
